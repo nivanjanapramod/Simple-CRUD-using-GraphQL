@@ -42,7 +42,6 @@ class CreateHero(graphene.Mutation):
         )
 
 
-
 class UpdateHero(graphene.Mutation):
     class Arguments:
         id = graphene.ID()
@@ -62,6 +61,7 @@ class UpdateHero(graphene.Mutation):
         return UpdateHero(
             hero=hero
         )
+
 
 class DeleteHero(graphene.Mutation):
     class Arguments:
